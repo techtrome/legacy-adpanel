@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Admin Panel</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="panel-head">
+			<section class="panel-head-wrapper">
+				<h1 class="title">admin panel</h1>
+				<div class="authIn"><a href="#">logout</a></div>
+			</section>
+		</header>
+		<main class="panel-bdy">
+			<form class="login-form add-product" action="#" method="post">
+					<h4>Add Product</h4>
+					<label for="product-name">product name</label>
+					<input type="text" name="product-name" id="product-name"><br />
+					<label for="product-category">product category</label>
+					<select name="product-category-select">
+						<option value="Select Category" selected="true">Select Category</option>
+						<option value="African Agbada">African Agbada</option>
+						<option value="Men Wear">Men Wear</option>
+						<option value="Lady Wear">Lady Wear</option>
+						<option value="Occusional Dress">Occusional Dress</option>
+					</select>
+					<div class="market-price">
+						<div class="prev-price">
+							<label for="product-prev-price">previous price</label>
+							<input type="text" name="product-prev-price" id="product-prev-price"><br />
+						</div>
+						<div class="current-price">
+							<label for="product-current-price">current price</label>
+							<input type="text" name="product-current-price" id="product-current-price"><br />
+						</div>
+					</div>
+					<label for="product-image">product image</label>
+					<span>Choose Image</span>
+					<input type="file" name="add-product-image">
+					<input type="submit" name="add" value="Add" style="display: block">
+			</form>
+		</main>
+		<footer class="panel-footer">
+			<p>Copyright &copy; 2021. All Rights Reserved by <a href="#">Legacy.com</a> Designed by <a href="#">Twelvesquares.net</a></p>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="./add-product.js"></script>
+</html>
